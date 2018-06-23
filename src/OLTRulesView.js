@@ -33,7 +33,15 @@ class OLTRulesView extends React.Component {
     return(
       <div className={"mainContainer"}>
           <h1>Rules</h1>
-          
+          <p>{JSON.stringify(this.state.backend.rules[0])}</p>
+          <Divider />
+          <p>
+          {JSON.stringify(this.state.backend.rules[1])}
+          </p>
+          <Divider />
+          <p>
+          {JSON.stringify(this.state.backend.rules[2])}
+          </p>
       </div>
     )
   }

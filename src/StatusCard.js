@@ -29,9 +29,9 @@ function StatusCard(props) {
       <Card className={classes.card}>
         <CardContent>
           <Typography variant="headline" component="h2">
-            {props.title}
+            <b>{props.title}</b>
           </Typography>
-          <Typography component="p">
+          <Typography variant="headline" component="h1">
             {props.value.toFixed(2)}{props.symbol}
           </Typography>
         </CardContent>
